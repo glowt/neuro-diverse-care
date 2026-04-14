@@ -1,0 +1,179 @@
+{
+  "project_overview": {
+    "domain": "Special Education Services Landing Page & Admin",
+    "theme": "Light Theme (High Authority, Organic & Earthy)",
+    "archetype": "1 (Organic & Earthy / Trust / Calm)",
+    "goal": "High-conversion lead generation via WhatsApp, emphasizing credibility, empathy, and professional authority."
+  },
+  "color_palette": {
+    "primary_text": "#0D3B3B",
+    "cta_and_highlights": "#C7A562",
+    "background_light_blue": "#B3D3D9",
+    "background_alt_1": "#E3F0F2",
+    "background_alt_2": "#D0E0E4",
+    "white": "#FFFFFF",
+    "error": "#FF3B30",
+    "success": "#34C759",
+    "surface": "#FFFFFF",
+    "border": "rgba(13, 59, 59, 0.15)",
+    "rules": [
+      "No generic gradients. Use the background colors provided (#B3D3D9, #E3F0F2, #D0E0E4) to alternate sections.",
+      "All CTAs must use #C7A562 (Golden/Bronze) with #FFFFFF or #0D3B3B text (check contrast).",
+      "Text must predominantly be #0D3B3B for high readability.",
+      "Hover states for CTAs should increase lightness of #C7A562 by 10-15%."
+    ]
+  },
+  "typography": {
+    "headings": {
+      "family": "Playfair Display, serif",
+      "weights": ["600", "700"],
+      "usage": "Use for Hero H1, Section H2s, Testimonial Quotes. Creates an authoritative, premium, and trustworthy feel.",
+      "tracking": "tracking-tight"
+    },
+    "body": {
+      "family": "Work Sans, sans-serif",
+      "weights": ["400", "500", "600"],
+      "usage": "Use for all body copy, forms, buttons, and admin dashboard. High accessibility and friendly.",
+      "tracking": "tracking-normal"
+    },
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-bold leading-none text-[#0D3B3B]",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight text-[#0D3B3B]",
+      "h3": "text-xl sm:text-2xl font-medium text-[#0D3B3B]",
+      "body": "text-base md:text-lg text-[#0D3B3B]/80",
+      "small": "text-sm text-[#0D3B3B]/70 uppercase tracking-[0.2em]"
+    }
+  },
+  "layout_and_spacing": {
+    "spacing_scale": "p-4, p-8, p-12, p-16, p-24, p-32",
+    "section_padding": "py-20 md:py-32",
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "border_radius": "rounded-2xl or rounded-3xl for soft, empathetic shapes",
+    "grid_bento": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8",
+    "alternating_sections": "Section 1: #FFFFFF, Section 2: #E3F0F2, Section 3: #D0E0E4, Section 4: #FFFFFF"
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#C7A562] text-white hover:bg-[#b09257] transition-colors duration-300 rounded-full px-8 py-4 font-semibold text-lg flex items-center justify-center gap-2",
+      "whatsapp_floating": "fixed bottom-6 right-6 bg-[#C7A562] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform z-50 flex items-center justify-center h-16 w-16"
+    },
+    "cards": {
+      "surface": "bg-white rounded-3xl p-8 shadow-[0_8px_32px_rgba(13,59,59,0.08)] border border-[#0D3B3B]/5",
+      "hover": "hover:-translate-y-2 hover:shadow-[0_16px_48px_rgba(13,59,59,0.12)] transition-all duration-300"
+    },
+    "admin_dashboard": {
+      "strategy": "Shadcn UI based. Clean, functional, and intuitive.",
+      "sidebar": "Fixed left sidebar, bg-[#0D3B3B] text-white, #C7A562 for active states.",
+      "content_area": "bg-[#E3F0F2] text-[#0D3B3B] min-h-screen p-8",
+      "cards": "Shadcn Card components with sharp or slightly rounded corners (rounded-lg).",
+      "toggles": "Shadcn Switch for enabling/disabling sections.",
+      "drag_drop": "Use a library like dnd-kit for reordering sections."
+    }
+  },
+  "page_sections": [
+    {
+      "id": "hero",
+      "background": "#B3D3D9",
+      "layout": "Two-column on desktop (Text left, Image right). Left-aligned text.",
+      "elements": "H1, Overline, Subtitle, Primary WhatsApp CTA Button, Trust Badges.",
+      "image_requirement": "High-quality professional teacher portrait or abstract educational background."
+    },
+    {
+      "id": "social_proof_stats",
+      "background": "#FFFFFF",
+      "layout": "Grid 3 to 4 columns showing big numbers.",
+      "elements": "Numbers in #C7A562, descriptions in #0D3B3B."
+    },
+    {
+      "id": "target_audience",
+      "background": "#E3F0F2",
+      "layout": "Grid of cards highlighting who this is for (e.g., Parents, Specific conditions).",
+      "elements": "Icon (#C7A562), H3 Title, Body text."
+    },
+    {
+      "id": "how_it_works",
+      "background": "#D0E0E4",
+      "layout": "Vertical timeline or horizontal step-by-step 1-2-3 bento.",
+      "elements": "Step Numbers in bold Playfair Display, Connective lines."
+    },
+    {
+      "id": "differentials",
+      "background": "#FFFFFF",
+      "layout": "Bento Grid or asymmetric layout.",
+      "elements": "Why choose me? Authority markers, bespoke methods."
+    },
+    {
+      "id": "testimonials",
+      "background": "#E3F0F2",
+      "layout": "Carousel (Swiper.js) of cards to show social proof.",
+      "elements": "Star ratings, quote, parent name, student improvement metric."
+    },
+    {
+      "id": "about",
+      "background": "#FFFFFF",
+      "layout": "Two-column. Image left, text right. High authority.",
+      "elements": "Professional headshot, H2 (Meet the Teacher), Biography, Qualifications list."
+    },
+    {
+      "id": "final_cta",
+      "background": "#0D3B3B",
+      "text_color": "#FFFFFF",
+      "layout": "Center aligned banner. Generous padding (py-32).",
+      "elements": "H2, Subtitle, massive Golden CTA (#C7A562) button."
+    }
+  ],
+  "motion_and_interactions": {
+    "scroll": "Use Lenis for smooth momentum scrolling.",
+    "reveal": "Framer Motion. Fade in and slide up (y: 20) on scroll using viewport once:true.",
+    "hover": "Scale up images slightly inside overflow-hidden wrappers. Cards lift on hover."
+  },
+  "accessibility_and_testing": {
+    "contrast": "Ensure #0D3B3B on #B3D3D9/#E3F0F2 passes WCAG AA.",
+    "focus": "focus-visible:ring-2 focus-visible:ring-[#C7A562] focus-visible:ring-offset-2",
+    "test_attributes": "All interactive elements must have a data-testid. E.g., data-testid='hero-whatsapp-btn', data-testid='admin-toggle-hero'."
+  },
+  "media": {
+    "images": {
+      "hero_abstract_bg": {
+        "url": "https://static.prod-images.emergentagent.com/jobs/12b82405-abd8-4089-86e8-c799a5587906/images/a95ea104866e80bf808a2f58a441f0b45ce07265dd98103a333ac22356b34c85.png",
+        "description": "Abstract light blue and golden geometric educational background.",
+        "usage": "Hero section background image or side illustration."
+      },
+      "teacher_portrait": {
+        "url": "https://static.prod-images.emergentagent.com/jobs/12b82405-abd8-4089-86e8-c799a5587906/images/2d5f3740311c9fdd7af4a2dbbbffb9ef1019a22428ed64d72115d21ad94f2b2c.png",
+        "description": "Professional warm portrait of a special education teacher.",
+        "usage": "About section professional image."
+      },
+      "educational_3d_tools": {
+        "url": "https://static.prod-images.emergentagent.com/jobs/12b82405-abd8-4089-86e8-c799a5587906/images/b3c2fd096a3ec6596655275e91ed4877514d335a98ae7e6f7b285c811c681b6b.png",
+        "description": "3D minimalist educational tools (book, graduation cap) floating.",
+        "usage": "Differentials or How it Works section decoration."
+      },
+      "unsplash_teacher_helping": {
+        "url": "https://images.unsplash.com/photo-1758685733907-42e9651721f5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwzfHx0ZWFjaGVyJTIwaGVscGluZyUyMHN0dWRlbnR8ZW58MHx8fHwxNzc1OTExMzA1fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Teacher helping young student.",
+        "usage": "Target Audience or Testimonials section context."
+      },
+      "unsplash_happy_child": {
+        "url": "https://images.unsplash.com/photo-1623076189461-f7706b741c04?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNTl8MHwxfHNlYXJjaHwzfHxoYXBweSUyMGNoaWxkJTIwbGVhcm5pbmd8ZW58MHx8fHwxNzc1OTExMzA0fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Happy child learning at a laptop.",
+        "usage": "General social proof or course context."
+      }
+    },
+    "icons": {
+      "library": "lucide-react",
+      "usage": "Use thick stroke width (2px or 2.5px) to maintain the premium feel. Primary icon color should be #C7A562."
+    }
+  },
+  "instructions_to_main_agent": [
+    "Install and use Playfair Display and Work Sans fonts.",
+    "Implement the landing page with modular sections mapping directly to the 'page_sections' array above.",
+    "Create an Admin Panel route (e.g., /admin) using Shadcn components.",
+    "In the Admin Panel, build a toggle list to hide/show sections on the landing page dynamically. Maintain this state securely.",
+    "Implement drag-and-drop to reorder sections in the Admin Panel.",
+    "Implement forms for editing text content (H1s, paragraphs, testimonials) and uploading images.",
+    "Ensure the floating WhatsApp button is absolutely present on all viewports on the landing page.",
+    "Strictly follow the color palette. Dark Teal (#0D3B3B) for primary text, Golden Bronze (#C7A562) for CTAs.",
+    "Add 'data-testid' to ALL interactive elements (buttons, inputs, links, drag handles)."
+  ]
+}
